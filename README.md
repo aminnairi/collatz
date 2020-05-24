@@ -39,7 +39,13 @@ $ collatz 5
 5 16 8 4 2 1
 ```
 
-> *`collatz` only accepts one integer number.*
+> *`collatz` only accepts one integer number greater or equal to one.*
+
+## :thinking: Help
+
+```console
+$ man collatz
+```
 
 ## :fire: Uninstallation
 
