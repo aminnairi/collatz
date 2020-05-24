@@ -7,11 +7,15 @@
 #define ERROR_TOO_MUCH_ARGUMENTS 2
 #define ERROR_INVALID_COLLATZ 3
 
+#define UNUSED(something) (void) something
+
 unsigned int toUnsignedInteger(const char *string);
 void printCollatz(unsigned int start);
 
 // Our program takes arguments
 int main(int argumentsCount, char **arguments) {
+    UNUSED(argumentsCount);
+
     // If we didn't receive any arguments
     if (arguments[1] == NULL) {
         puts("Expected one argument.");
