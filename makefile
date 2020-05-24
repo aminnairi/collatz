@@ -34,7 +34,10 @@ mrproper: clean
 # make install (requires superuser privileges)
 install:
 	@cp $(BINARIES_FOLDER)/$(BINARY) /usr/local/bin/$(BINARY)
+	@mkdir -p /usr/local/man/man1
+	@cp man/$(BINARY).1 /usr/local/man/man1/$(BINARY).1
 
 # make uninstall (requires superuser privileges)
 uninstall:
 	@rm -rf /usr/local/bin/$(BINARY)
+	@rm -rf /usr/local/man/man1/$(BINARY).1
