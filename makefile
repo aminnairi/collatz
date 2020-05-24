@@ -9,6 +9,8 @@ SOURCES=$(wildcard $(SOURCES_FOLDER)/*.c)
 OBJECTS_FOLDER=objects
 OBJECTS=$(SOURCES:$(SOURCES_FOLDER)/%.c=$(OBJECTS_FOLDER)/%.o)
 
+C_FLAGS=-Wall -Wextra -Wpedantic -O3 -std=c18
+
 # make
 # make compile
 compile: $(BINARIES_FOLDER)/$(BINARY)
@@ -19,7 +21,7 @@ $(BINARIES_FOLDER)/$(BINARY): $(OBJECTS)
 
 $(OBJECTS_FOLDER)/%.o: $(SOURCES_FOLDER)/%.c
 	@mkdir -p $(OBJECTS_FOLDER)
-	@gcc -o $@ -c $^
+	@gcc $(C_FLAGS) -o $@ -c $^
 
 # make clean
 clean:
