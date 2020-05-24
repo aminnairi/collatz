@@ -5,10 +5,11 @@ Command line interface to compute & print the [Collatz conjecture](https://en.wi
 ## :book: Requirements
 
 - UNIX-like operating system
+- Superuser privileges
 - [Git](https://git-scm.com/)
 - [GCC](https://gcc.gnu.org/)
 - [GNU/Make](https://www.gnu.org/software/make/)
-- Superuser privileges
+- [Man](https://www.gnu.org/prep/standards/html_node/Man-Pages.html#Man-Pages)
 
 ## :sparkles: Initialization
 
