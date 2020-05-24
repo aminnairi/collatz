@@ -8,7 +8,7 @@ Command line interface to compute & print the [Collatz conjecture](https://en.wi
 - Superuser privileges
 - [Git](https://git-scm.com/)
 - [GCC](https://gcc.gnu.org/)
-- [Libc](https://www.gnu.org/software/libc/)
+- [GNU C Library](https://www.gnu.org/software/libc/)
 - [GNU/Make](https://www.gnu.org/software/make/)
 - [Man](https://www.gnu.org/prep/standards/html_node/Man-Pages.html#Man-Pages)
 
