@@ -30,6 +30,13 @@ int main(int argumentsCount, char **arguments) {
         return ERROR_TOO_MUCH_ARGUMENTS;
     }
 
+    // If the --version option is provided
+    if (strcmp(arguments[1], "--version") == 0) {
+        puts("0.3.0");
+
+        return NO_ERROR;
+    }
+
     // We turn our argument into its integer representation
     unsigned int start = toUnsignedInteger(arguments[1]);
 
