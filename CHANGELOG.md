@@ -1,3 +1,7 @@
+## 0.3.0
+
+- :bookmark: added a version option and enhanced the man page ([#7](https://github.com/aminnairi/collatz/pull/7))
+
 ## 0.2.0
 
 - :sparkles: added a man page ([#4](https://github.com/aminnairi/collatz/pull/4))
