@@ -2,6 +2,8 @@
 
 Command line interface to compute & print the [Collatz conjecture](https://en.wikipedia.org/wiki/Collatz_conjecture).
 
+![Animated image showing an example usage of the program](https://i.ibb.co/hWcMS4M/collatz.gif)
+
 ## :book: Requirements
 
 - UNIX-like operating system
