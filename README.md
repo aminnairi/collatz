@@ -74,3 +74,45 @@ $ make mrproper
 ```
 
 This will remove the `objects` & `binaries` folder.
+
+## :question: FAQ
+
+### How can I change the compiler?
+
+```console
+$ vim makefile
+```
+
+```makefile
+COMPILER=gcc
+```
+
+### How can I change the compiler's options?
+
+```console
+$ vim makefile
+```
+
+```console
+COMPILER_FLAGS=-Wall -Wextra -Wpedantic -O3 -std=c18
+```
+
+### How can I change the linker?
+
+```console
+$ vim makefile
+```
+
+```makefile
+LINKER=gcc
+```
+
+### How can I change the linker's flags?
+
+```console
+$ vim makefile
+```
+
+```makefile
+LINKER_FLAGS=
+```
