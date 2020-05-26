@@ -10,7 +10,7 @@ OBJECTS_FOLDER=objects
 OBJECTS=$(SOURCES:$(SOURCES_FOLDER)/%.c=$(OBJECTS_FOLDER)/%.o)
 
 COMPILER=gcc
-COMPILER_FLAGS=-Wall -Wextra -Wpedantic -O3 -std=c18
+COMPILER_FLAGS=-Wall -Wextra -Wpedantic -O3 -std=c11
 
 LINKER=gcc
 LINKER_FLAGS=
