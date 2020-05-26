@@ -6,6 +6,15 @@ collatz \- Command line interface to compute & print the Collatz conjecture.
 .SH SYNOPSIS
 .B collatz
 [\fIOPTIONS\fR] \fISTART\fR
+.SH RETURN VALUES
+.TP
+0 if there are no errors.
+.TP
+1 if no arguments are provided.
+.TP
+2 if there are too much arguments provided. It expects only one argument.
+.TP
+3 if the argument is invalid. The program only accept an integer.
 .SH DESCRIPTION
 .B collatz
 is a command line interface that can compute & print the Collatz conjecture.
