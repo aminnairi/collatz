@@ -9,7 +9,7 @@ SOURCES=$(wildcard $(SOURCES_FOLDER)/*.c)
 OBJECTS_FOLDER=objects
 OBJECTS=$(SOURCES:$(SOURCES_FOLDER)/%.c=$(OBJECTS_FOLDER)/%.o)
 
-C_FLAGS=-Wall -Wextra -Wpedantic -O3 -std=c18
+COMPILER_FLAGS=-Wall -Wextra -Wpedantic -O3 -std=c18
 
 # make
 # make compile
@@ -21,7 +21,7 @@ $(BINARIES_FOLDER)/$(BINARY): $(OBJECTS)
 
 $(OBJECTS_FOLDER)/%.o: $(SOURCES_FOLDER)/%.c
 	@mkdir -p $(OBJECTS_FOLDER)
-	@gcc $(C_FLAGS) -o $@ -c $^
+	@gcc $(COMPILER_FLAGS) -o $@ -c $^
 
 # make clean
 clean:
@@ -31,13 +31,21 @@ clean:
 mrproper: clean
 	@rm -rf $(BINARIES_FOLDER)
 
-# make install (requires superuser privileges)
+# make install
 install:
+ifneq ($(shell id -u), 0)
+	@echo "You must have root access to perform this action."
+else
 	@cp $(BINARIES_FOLDER)/$(BINARY) /usr/local/bin/$(BINARY)
 	@mkdir -p /usr/local/man/man1
 	@cp man/$(BINARY).1 /usr/local/man/man1/$(BINARY).1
+endif
 
-# make uninstall (requires superuser privileges)
+# make uninstall
 uninstall:
+ifneq ($(shell id -u), 0)
+	@echo "You must have root access to perform this action."
+else
 	@rm -rf /usr/local/bin/$(BINARY)
 	@rm -rf /usr/local/man/man1/$(BINARY).1
+endif
