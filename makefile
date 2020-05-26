@@ -39,6 +39,7 @@ mrproper: clean
 install:
 ifneq ($(shell id -u), 0)
 	@echo "You must have root access to perform this action."
+	@exit 1
 else
 	@cp $(BINARIES_FOLDER)/$(BINARY) /usr/local/bin/$(BINARY)
 	@mkdir -p /usr/local/man/man1
@@ -49,6 +50,7 @@ endif
 uninstall:
 ifneq ($(shell id -u), 0)
 	@echo "You must have root access to perform this action."
+	@exit 1
 else
 	@rm -rf /usr/local/bin/$(BINARY)
 	@rm -rf /usr/local/man/man1/$(BINARY).1
