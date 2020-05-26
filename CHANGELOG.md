@@ -1,3 +1,7 @@
+## 0.9.0
+
+- :sparkles: added return values in the man page ([#25](https://github.com/aminnairi/collatz/pull/25))
+
 ## 0.8.0
 
 - :sparkles: added an action for all things related to the compilation ([#24](https://github.com/aminnairi/collatz/pull/24))
