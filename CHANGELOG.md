@@ -1,3 +1,7 @@
+## 0.5.0
+
+- :lock: added superuser guards for the install & uninstall commands ([#20](https://github.com/aminnairi/collatz/pull/20)) 
+
 ## 0.4.0
 
 - :sparkles: added man as a requirement ([#10](https://github.com/aminnairi/collatz/pull/10))
