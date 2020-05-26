@@ -1,0 +1,34 @@
+name: Compilation CI
+
+on:
+    push:
+        branches:
+            - master
+
+    pull_request:
+        branches:
+            - master
+
+jobs:
+    compilation:
+        name: Check if the program can compile
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout the project
+              uses: actions/checkout@v2
+
+            - name: Compile the program
+              run: make
+
+            - name: Install the program and the manual globally 
+              run: sudo make install
+
+            - name: Run the program
+              run: collatz --version
+
+            - name: Display the man page
+              run: man --where collatz
+
+            - name: Uninstall the program and the manual globally 
+              run: sudo make uninstall
