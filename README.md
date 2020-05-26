@@ -29,8 +29,10 @@ $ make compile  # alternative
 ## :arrow_down: Installation
 
 ```console
-$ sudo make install
+$ make install
 ```
+
+> *Note: this will copy the program to the `/usr/local/bin` folder as well as copying the man page to the `/usr/local/man/man1` folder, requiring superuser access.*
 
 ## :runner: Run
 
@@ -52,8 +54,10 @@ $ man collatz
 ## :fire: Uninstallation
 
 ```console
-$ sudo make uninstall
+$ make uninstall
 ```
+
+> *Note: this will remove the copy of the program from the `/usr/local/bin` folder as well as removing the man page from the `/usr/local/man/man1` folder, requiring superuser access.*
 
 ## :recycle: Clean
 
