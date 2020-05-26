@@ -28,7 +28,7 @@ jobs:
               run: collatz --version
 
             - name: Display the man page
-              run: man --where collat
+              run: man --where collatz
 
             - name: Uninstall the program and the manual globally 
               run: sudo make uninstall
