@@ -1,5 +1,7 @@
 # collatz
 
+[![Compilation CI](https://github.com/aminnairi/collatz/workflows/Compilation%20CI/badge.svg)](https://github.com/aminnairi/collatz/actions?query=workflow%3A%22Compilation+CI%22)
+
 Command line interface to compute & print the [Collatz conjecture](https://en.wikipedia.org/wiki/Collatz_conjecture).
 
 ![Animated image showing an example usage of the program](https://i.ibb.co/hWcMS4M/collatz.gif)
