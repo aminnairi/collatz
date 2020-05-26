@@ -22,7 +22,7 @@ jobs:
               run: make
 
             - name: Install the program and the manual globally 
-              run: make install
+              run: sudo make install
 
             - name: Run the program
               run: collatz --version
@@ -31,4 +31,4 @@ jobs:
               run: man --where collat
 
             - name: Uninstall the program and the manual globally 
-              run: make uninstall
+              run: sudo make uninstall
