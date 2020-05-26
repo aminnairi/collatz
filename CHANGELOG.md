@@ -1,3 +1,7 @@
+## 0.8.0
+
+- :sparkles: added an action for all things related to the compilation ([#24](https://github.com/aminnairi/collatz/pull/24))
+
 ## 0.7.0
 
 - :sparkles: added a gif for showing an example usage of the program ([#23](https://github.com/aminnairi/collatz/pull/23))
