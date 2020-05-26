@@ -32,7 +32,7 @@ int main(int argumentsCount, char **arguments) {
 
     // If the --version option is provided
     if (strcmp(arguments[1], "--version") == 0) {
-        puts("0.5.0");
+        puts("0.6.0");
 
         return NO_ERROR;
     }
