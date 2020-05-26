@@ -1,3 +1,7 @@
+## 0.6.0
+
+- :wrench: made the compiler, linker as well as their options dynamic ([#22](https://github.com/aminnairi/collatz/pull/22))
+
 ## 0.5.0
 
 - :lock: added superuser guards for the install & uninstall commands ([#20](https://github.com/aminnairi/collatz/pull/20)) 
