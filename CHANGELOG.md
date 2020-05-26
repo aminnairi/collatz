@@ -1,4 +1,4 @@
-## 0.6.0
+## 0.7.0
 
 - :sparkles: added a gif for showing an example usage of the program (#23)
 
